@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta content="width=device-width, initial-scale=1.0" name="viewport">
+	<meta content="ie=edge" http-equiv="X-UA-Compatible">
+	<title>WIT E-Sports Club - Contact</title>
+	<meta content="A website made for the WIT E-Sports Club." name="description">
+	<link href="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.css" rel="stylesheet">
+	<link href="css/style.css" rel="stylesheet">
+	<style>
+	</style>
+</head>
+<body>
+	<header class="ui inverted vertical segment">
+		<div class="ui container">
+			<nav class="ui secondary stackable menu">
+				<div class="item">
+					<i class="gamepad inverted white big icon"></i>
+				</div><a class="ui inverted header" href="index.html">WIT E-Sports Club</a>
+				<div class="right menu">
+					<div class="item header">
+						<a href="index.html">Home</a>
+					</div>
+					<div class="item header">
+						<a href="about.html">About</a>
+					</div>
+					<div class="item header">
+						<a href="games.html">Games</a>
+					</div>
+					<div class="item">
+						<a class="ui huge red button" href="contact.html">Contact Us!</a>
+					</div>
+				</div>
+			</nav>
+		</div>
+	</header>
+	<main class="ui container">
+		<form action="processed.html" class="ui form segment" id="contact" method="get" name="contact">
+			<h2 class="ui header">Get In Contact With Us!</h2>
+			<p>If you need to get in touch urgently, please call Eryk Grabkowski on 085 123 4567. For anything else, please <a href="mailto:20093474@mail.wit.ie">drop us a message by email</a>.</p>
+			<div class="two fields">
+				<div class="field">
+					<label>Name</label> <input name="fname" placeholder="First Name" type="text">
+				</div>
+				<div class="field">
+					<label>Name</label> <input name="lname" placeholder="Last Name" type="text">
+				</div>
+			</div>
+			<div class="ui accordion field">
+				<div class="title">
+					<i class="icon dropdown"></i> Optional Details
+				</div>
+				<div class="content field">
+					<label class="transition visible">Middle Name</label> <input class="transition visible" placeholder="Middle Name" style="display: inline-block !important;" type="text">
+				</div>
+			</div>
+			<div class="two fields">
+				<div class="field">
+					<label>Gamer Tag</label> <input name="username" placeholder="Steam/Xbox/PlayStation/Blizzard/Discord etc.." type="text">
+				</div>
+				<div class="field">
+					<label>Email</label> <input name="email" placeholder="Email" type="email">
+				</div>
+			</div>
+			<div class="field">
+				<label>Games</label> <select class="ui dropdown" multiple name="games">
+					<option value="">
+						Games
+					</option>
+					<option value="csgo">
+						Counter-Strike: Global Offensive
+					</option>
+					<option value="lol">
+						League Of Legends
+					</option>
+					<option value="valorant">
+						Valorant
+					</option>
+				</select>
+			</div>
+			<div class="field">
+				<label>Date Of Birth</label> <input max="2004-12-31" min="1900-01-01" name="date" type="date">
+			</div>
+			<div class="field">
+				<label>Text</label> 
+				<textarea name="text" placeholder="Type Your Message Here"></textarea>
+			</div>
+			<div class="inline field">
+				<div class="ui checkbox">
+					<input name="terms" type="checkbox"> <label>I confirm that this message is not spam and does not contain vulgar or inappropriate content.</label>
+				</div>
+			</div>
+			<div class="ui primary submit button">
+				Submit
+			</div>
+			<div class="ui reset button">
+				Reset
+			</div>
+			<div class="ui clear button">
+				Clear
+			</div>
+			<div class="ui error message"></div>
+		</form>
+	</main>
+	<footer class="ui inverted vertical segment">
+		<div class="ui container">
+			<div class="ui stackable center aligned inverted divided equal height stackable grid">
+				<div class="three wide column">
+					<div class="row">
+						<h4 class="ui inverted header">Main Links</h4>
+						<div class="ui inverted link list">
+							<a class="item" href="https://discord.gg/6hupP9a" target="_blank">WIT E-Sports Discord</a> <a class="item" href="https://discord.gg/53y7qNC67t" target="_blank">ICE E-Sports Discord</a> <a class="item" href="https://www.wit.ie/" target="_blank">WIT Website</a> <a class="item" href="https://www.irelandesports.ie/" target="_blank">Ireland E-Sports</a>
+						</div>
+					</div>
+				</div>
+				<div class="three wide column">
+					<div class="row">
+						<h4 class="ui inverted header">Other Links</h4>
+						<div class="ui inverted link list">
+							<a class="item" href="https://twitter.com/esl?lang=en" target="_blank">ESL Twitter</a> <a class="item" href="https://twitter.com/sport_wit?lang=en" target="_blank">WIT Viking Sports Twitter</a> <a class="item" href="https://www.wit.ie/current_students/sports_clubs_and_socs/sports_clubs" target="_blank">WIT Vikings Sport &#38; Societies</a> <a class="item" href="https://collegeesports.ie/" target="_blank">ICE Website</a>
+						</div>
+					</div>
+				</div>
+				<div class="seven wide column">
+					<h4 class="ui inverted header">This website and it's content is copyright of Eryk Grabkowski &copy;</h4>
+					<p>Copyright Disclaimer under section 107 of the Copyright Act of 1976, allowance is made for “fair use” for purposes such as criticism, comment, news reporting, teaching, scholarship, education and research. Fair use is a use permitted by copyright statute that might otherwise be infringing.</p>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<script src="https://code.jquery.com/jquery-3.4.1.min.js">
+	</script> 
+	<script src="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.js">
+	</script> 
+	<script>
+	             $('.ui.form')
+	                 .form({
+	                     fields: {
+	                         fname: {
+	                             identifier: 'fname',
+	                             rules: [{
+	                                 type: 'empty',
+	                                 prompt: 'Please enter your first name'
+	                             }]
+	                         },
+
+	                         lname: {
+	                             identifier: 'lname',
+	                             rules: [{
+	                                 type: 'empty',
+	                                 prompt: 'Please enter your first name'
+	                             }]
+	                         },
+
+	                         games: {
+	                             identifier: 'games',
+	                             rules: [{
+	                                 type: 'minCount[1]',
+	                                 prompt: 'Please select at least one game'
+	                             }]
+	                         },
+
+	                         email: {
+	                             identifier: 'email',
+	                             rules: [{
+	                                 type: 'empty',
+	                                 prompt: 'Please enter a valid email'
+	                             }]
+	                         },
+	                         username: {
+	                             identifier: 'username',
+	                             rules: [{
+	                                 type: 'empty',
+	                                 prompt: 'Please enter a gamer tag'
+	                             }]
+	                         },
+
+	                         text: {
+	                             identifier: 'text',
+	                             rules: [{
+	                                 type: 'empty',
+	                                 prompt: 'Please enter a message'
+	                             }, ]
+	                         },
+
+	                         date: {
+	                             identifier: 'date',
+	                             rules: [{
+	                                 type: 'empty',
+	                                 prompt: 'Please select a date of birth (You must be 16 or older)'
+	                             }, ]
+	                         },
+
+	                         terms: {
+	                             identifier: 'terms',
+	                             rules: [{
+	                                 type: 'checked',
+	                                 prompt: 'You must confirm that this message is not spam and does not contain vulgar or inappropriate content'
+	                             }]
+	                         }
+	                     }
+	                 });
+
+	</script> 
+	<script>
+	             $('.ui.dropdown')
+	                 .dropdown();
+
+	</script> 
+	<script>
+	             $('form').form('clear')
+
+	</script> 
+	<script>
+	             $('form').form('reset')
+
+	</script> 
+	<script>
+	             $('.ui.accordion')
+	                 .accordion();
+
+	</script>
+</body>
+</html>

@@ -1,0 +1,78 @@
+/* Header, Body, Main, Footer */
+
+body {
+	background-image: url(../images/background.jpg);
+	background-color: #1b1c1d;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: auto;
+	background-blend-mode: luminosity;
+	font-family: "Helvetica", "Arial", sans-serif;
+	display: flex;
+	flex-direction: column;
+}
+main {
+	padding: 25px;
+	margin: auto;
+}
+.ui.inverted.vertical.segment {
+	padding: 2em 0em;
+	position: relative;
+}
+.ui.center.inverted.aligned.header {
+	font-family: "Helvetica", "Arial", sans-serif;
+	text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+	font-size: 40px;
+}
+/* Cards */
+
+.ui.card {
+	font-weight: bold;
+	font-family: sans-serif;
+}
+.ui.card .description {
+	font-style: italic;
+}
+.ui.card .company {
+	color: red;
+}
+/* Custom Classes & IDs */
+
+.seven.wide.column p {
+	color: lightcoral;
+	font-style: italic;
+}
+p, h1, h2 {
+	color: dimgray;
+}
+/* Links */
+
+nav a {
+	color: white;
+	font-size: 15px;
+}
+nav a:hover {
+	color: lightskyblue;
+}
+nav a:active {
+	color: red;
+}
+.current {
+	color: red;
+}
+/* Form */
+
+#contact input:valid {
+	color: green;
+}
+#contact input:invalid {
+	color: red;
+	border-color: red;
+}
+.ui.form#contact label {
+	font-weight: bold;
+	font-size: small;
+	color: black;
+	line-height: 150%;
+	font-family: "Helvetica", "Arial", sans-serif;
+}
